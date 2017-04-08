@@ -103,14 +103,4 @@ get_header(); ?>
 </section>
 
 
-<ul class="d-flex social-list">
-	<?php custom_social( array(
-		get_theme_mod( 'social_1' ),
-		get_theme_mod( 'social_2' ),
-		get_theme_mod( 'social_3' ),
-		get_theme_mod( 'social_4' ),
-	) ) ?>
-</ul>
-
-
 <?php get_footer() ?>
