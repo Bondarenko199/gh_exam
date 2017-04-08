@@ -121,6 +121,8 @@ function gh_exam_scripts() {
 
 	wp_enqueue_script( 'owl.carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), false, true );
 
+	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array(), false, true );
+
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), false, true );
 
 	wp_enqueue_script( 'gh_exam-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -139,25 +141,25 @@ add_theme_support( 'custom-logo' );
 
 function register_my_post_types() {
 	$labels = array(
-		'name'               => _x( 'Slides', 'post type general name', 'gratia_theme' ),
-		'singular_name'      => _x( 'Slide', 'post type singular name', 'gratia_theme' ),
-		'menu_name'          => _x( 'Slides', 'admin menu', 'gratia_theme' ),
-		'name_admin_bar'     => _x( 'Slide', 'add new on admin bar', 'gratia_theme' ),
-		'add_new'            => _x( 'Add New', 'slide', 'gratia_theme' ),
-		'add_new_item'       => __( 'Add New Slide', 'gratia_theme' ),
-		'new_item'           => __( 'New Slide', 'gratia_theme' ),
-		'edit_item'          => __( 'Edit Slide', 'gratia_theme' ),
-		'view_item'          => __( 'View Slide', 'gratia_theme' ),
-		'all_items'          => __( 'All Slides', 'gratia_theme' ),
-		'search_items'       => __( 'Search Slides', 'gratia_theme' ),
-		'parent_item_colon'  => __( 'Parent Slides:', 'gratia_theme' ),
-		'not_found'          => __( 'No slides found.', 'gratia_theme' ),
-		'not_found_in_trash' => __( 'No slides found in Trash.', 'gratia_theme' )
+		'name'               => _x( 'Slides', 'post type general name', 'gh_exam' ),
+		'singular_name'      => _x( 'Slide', 'post type singular name', 'gh_exam' ),
+		'menu_name'          => _x( 'Slides', 'admin menu', 'gh_exam' ),
+		'name_admin_bar'     => _x( 'Slide', 'add new on admin bar', 'gh_exam' ),
+		'add_new'            => _x( 'Add New', 'slide', 'gh_exam' ),
+		'add_new_item'       => __( 'Add New Slide', 'gh_exam' ),
+		'new_item'           => __( 'New Slide', 'gh_exam' ),
+		'edit_item'          => __( 'Edit Slide', 'gh_exam' ),
+		'view_item'          => __( 'View Slide', 'gh_exam' ),
+		'all_items'          => __( 'All Slides', 'gh_exam' ),
+		'search_items'       => __( 'Search Slides', 'gh_exam' ),
+		'parent_item_colon'  => __( 'Parent Slides:', 'gh_exam' ),
+		'not_found'          => __( 'No slides found.', 'gh_exam' ),
+		'not_found_in_trash' => __( 'No slides found in Trash.', 'gh_exam' )
 	);
 
 	$args = array(
 		'labels'             => $labels,
-		'description'        => __( 'Description.', 'gratia_theme' ),
+		'description'        => __( 'Description.', 'gh_exam' ),
 		'public'             => true,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
@@ -173,6 +175,78 @@ function register_my_post_types() {
 	);
 
 	register_post_type( 'slide', $args );
+
+	register_post_type( 'offer', $args );$labels = array(
+		'name'               => _x( 'Offers', 'post type general name', 'gh_exam' ),
+		'singular_name'      => _x( 'Offer', 'post type singular name', 'gh_exam' ),
+		'menu_name'          => _x( 'Offers', 'admin menu', 'gh_exam' ),
+		'name_admin_bar'     => _x( 'Offer', 'add new on admin bar', 'gh_exam' ),
+		'add_new'            => _x( 'Add New', 'offer', 'gh_exam' ),
+		'add_new_item'       => __( 'Add New Offer', 'gh_exam' ),
+		'new_item'           => __( 'New Offer', 'gh_exam' ),
+		'edit_item'          => __( 'Edit Offer', 'gh_exam' ),
+		'view_item'          => __( 'View Offer', 'gh_exam' ),
+		'all_items'          => __( 'All Offers', 'gh_exam' ),
+		'search_items'       => __( 'Search Offers', 'gh_exam' ),
+		'parent_item_colon'  => __( 'Parent Offers:', 'gh_exam' ),
+		'not_found'          => __( 'No offers found.', 'gh_exam' ),
+		'not_found_in_trash' => __( 'No offer found in Trash.', 'gh_exam' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => __( 'Description.', 'gh_exam' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'offer' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'taxonomies'         => array( 'category' ),
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+	);
+
+	register_post_type( 'offer', $args );
+
+	register_post_type( 'offer', $args );$labels = array(
+		'name'               => _x( 'Works', 'post type general name', 'gh_exam' ),
+		'singular_name'      => _x( 'Work', 'post type singular name', 'gh_exam' ),
+		'menu_name'          => _x( 'Works', 'admin menu', 'gh_exam' ),
+		'name_admin_bar'     => _x( 'Work', 'add new on admin bar', 'gh_exam' ),
+		'add_new'            => _x( 'Add New', 'work', 'gh_exam' ),
+		'add_new_item'       => __( 'Add New Work', 'gh_exam' ),
+		'new_item'           => __( 'New Work', 'gh_exam' ),
+		'edit_item'          => __( 'Edit Work', 'gh_exam' ),
+		'view_item'          => __( 'View Work', 'gh_exam' ),
+		'all_items'          => __( 'All Works', 'gh_exam' ),
+		'search_items'       => __( 'Search Works', 'gh_exam' ),
+		'parent_item_colon'  => __( 'Parent Works:', 'gh_exam' ),
+		'not_found'          => __( 'No works found.', 'gh_exam' ),
+		'not_found_in_trash' => __( 'No works found in Trash.', 'gh_exam' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => __( 'Description.', 'gh_exam' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'work' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'taxonomies'         => array( 'category' ),
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+	);
+
+	register_post_type( 'work', $args );
 }
 
 add_action( 'init', 'register_my_post_types' );
@@ -201,3 +275,9 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/**
+ * Load custom Widgets file.
+ */
+require get_template_directory() . '/inc/custom-widgets.php';

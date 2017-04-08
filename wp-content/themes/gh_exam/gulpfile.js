@@ -22,7 +22,8 @@ let config = {
         'src': [
             './node_modules/tether/dist/js/tether.min.js',
             './node_modules/bootstrap/dist/js/bootstrap.min.js',
-            './node_modules/owl.carousel/dist/owl.carousel.min.js'
+            './node_modules/owl.carousel/dist/owl.carousel.min.js',
+            './node_modules/isotope-layout/dist/isotope.pkgd.min.js'
         ],
         'dest': './js'
     },

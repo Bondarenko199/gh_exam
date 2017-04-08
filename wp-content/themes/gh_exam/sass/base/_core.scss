@@ -7,10 +7,27 @@ section {
   padding: 6.25em 0;
 }
 
+.container {
+  z-index: 2;
+}
+
 .img-responsive {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.tone {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+  }
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -75,6 +92,10 @@ section {
   &-bg {
     background: $mid-tone-bg;
   }
+}
+
+.mid-dark-text {
+  color: $mid-dark-text;
 }
 
 .color {

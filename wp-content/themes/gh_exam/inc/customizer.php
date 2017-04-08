@@ -38,6 +38,47 @@ function gh_exam_customize_register( $wp_customize ) {
 		'priority' => 30
 	) );
 
+	/*-------------------------------Home Section 1-------------------------------*/
+
+	$wp_customize->add_section( 'section_1', array(
+		'title'    => __( 'Section 1', 'gh_exam' ),
+		'panel'    => 'home_page_options',
+		'priority' => 10
+	) );
+
+
+	$wp_customize->add_setting( 'section_1_image', array(
+		'default'   => 'Headline',
+		'transport' => 'refresh'
+	) );
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'section_1_image', array(
+		'label'    => __( 'Section headline', 'gh_exam' ),
+		'section'  => 'section_1',
+		'settings' => 'section_1_image'
+	) ) );
+
+
+	$wp_customize->add_setting( 'section_1_header_headline', array(
+		'default'   => 'Headline',
+		'transport' => 'refresh'
+	) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'section_1_header_headline', array(
+		'label'    => __( 'Section headline', 'gh_exam' ),
+		'section'  => 'section_1',
+		'settings' => 'section_1_header_headline'
+	) ) );
+
+
+	$wp_customize->add_setting( 'section_1_header_text', array(
+		'default'   => 'Text',
+		'transport' => 'refresh'
+	) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'section_1_header_text', array(
+		'label'    => __( 'Section header text', 'gh_exam' ),
+		'section'  => 'section_1',
+		'settings' => 'section_1_header_text'
+	) ) );
+
 	/*-------------------------------Home Section 2 Header-------------------------------*/
 
 	$wp_customize->add_section( 'section_2', array(

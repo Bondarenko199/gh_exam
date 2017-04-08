@@ -43,16 +43,19 @@
             </div>
         </div>
     </section>
-    <section class="contact-form">
+    <section class="contact-form tone">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="section-header margin">
-                        <h3 class="section-header-headline margin"><?php echo get_theme_mod( 'footer_contacts_headline' ) ?></h3>
-                        <span class="section-header-headline margin"><?php echo get_theme_mod( 'footer_contacts_header_text' ) ?></span>
+                    <div class="section-header footer-header margin">
+                        <h3 class="section-header-headline margin light-text"><?php echo get_theme_mod( 'footer_contacts_headline' ) ?></h3>
+                        <span class="section-header-text margin light-text"><?php echo get_theme_mod( 'footer_contacts_header_text' ) ?></span>
 
-                        <span><?php echo get_theme_mod( 'footer_phone_number' ) ?></span>
-                        <span><?php echo get_theme_mod( 'footer_email' ) ?></span>
+                        <span class="light-text fa fa-phone"><?php echo get_theme_mod( 'footer_phone_number' ) ?></span>
+                        <span class="light-text fa fa-map-marker footer-address"><?php echo get_theme_mod( 'footer_address' ) ?></span>
+                        <div class="map-container">
+                            <?php echo do_shortcode('[wpgmza id="1"]') ?>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -61,13 +64,13 @@
             </div>
         </div>
     </section>
-    <section class="logo text-center dark-bg">
-        <div class="logo-container d-inline-block">
+    <section class="logo-footer text-center dark-bg">
+        <div class="logo-footer-container d-inline-block">
 			<?php the_custom_logo() ?>
         </div>
     </section>
     <section class="rights text-center color-bg">
-        <span><?php _e( ' &copy 2015  All Rights Reserved.', 'gh_exam' ) ?></span>
+        <span class="light-text"><?php _e( ' &copy 2015  All Rights Reserved.', 'gh_exam' ) ?></span>
     </section>
 </footer><!-- #colophon -->
 

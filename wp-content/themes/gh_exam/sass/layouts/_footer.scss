@@ -1,0 +1,36 @@
+.contact-form {
+  background: url("images/image.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.footer-address {
+  margin-bottom: 2em;
+}
+
+.wpcf7-form-control {
+  width: 100%;
+  padding: 1.5em;
+  border: none;
+  margin-bottom: 1em;
+  color: $mid-tone-text;
+}
+
+.wpcf7-submit {
+  width: 30%;
+  padding: 1.5em;
+  background: $color-bg;
+  text-transform: uppercase;
+  color: $light-text;
+}
+
+.contact-form {
+  padding-bottom: 0;
+}
+
+.rights {
+  padding: 2em 0;
+}
+
+.logo-footer {
+  padding: 2.5em 0;
+}
