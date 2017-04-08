@@ -47,12 +47,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="section-header footer-header margin">
+                    <div class="section-header footer-header margin text-left">
                         <h3 class="section-header-headline margin light-text"><?php echo get_theme_mod( 'footer_contacts_headline' ) ?></h3>
-                        <span class="section-header-text margin light-text"><?php echo get_theme_mod( 'footer_contacts_header_text' ) ?></span>
+                        <span class="d-block section-header-text margin light-text"><?php echo get_theme_mod( 'footer_contacts_header_text' ) ?></span>
 
-                        <span class="light-text fa fa-phone"><?php echo get_theme_mod( 'footer_phone_number' ) ?></span>
-                        <span class="light-text fa fa-map-marker footer-address"><?php echo get_theme_mod( 'footer_address' ) ?></span>
+                        <span class="d-block light-text fa fa-phone footer-phone"><?php echo get_theme_mod( 'footer_phone_number' ) ?></span>
+                        <span class="d-block light-text fa fa-map-marker footer-address"><?php echo get_theme_mod( 'footer_address' ) ?></span>
                         <div class="map-container">
                             <?php echo do_shortcode('[wpgmza id="1"]') ?>
                         </div>

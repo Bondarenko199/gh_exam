@@ -3,12 +3,16 @@
     padding: 1em .5rem;
     display: block;
     color: inherit;
+    font-size: 1.1em;
     text-transform: uppercase;
+    &:hover {
+      color: $color-text;
+    }
   }
 }
 
 .current-menu-item {
-	a {
-      color: $color-text;
-	}
+  a {
+    color: $color-text;
+  }
 }

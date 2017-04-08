@@ -1,3 +1,8 @@
+.blog-header {
+  background: url("./images/blog-posts-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
 .posts-container {
   margin-bottom: 2em;
   position: relative;
@@ -7,11 +12,18 @@
   padding: 1em 1rem;
   a {
     color: $dark-text;
+    font: 1rem $font-bold;
+    &:hover {
+      color: $color-text;
+    }
   }
 }
 
 .entry-content {
   padding: 0 1rem 1em;
+  p {
+    line-height: 1.2em;
+  }
 }
 
 .entry-footer {
@@ -22,4 +34,16 @@
 
 .posted-on a time {
   color: $dark-text;
+}
+
+.pagination .nav-links {
+  .page-numbers {
+    padding: 1em;
+    margin-right: 1em;
+    background: $color-bg;
+    color: $light-text;
+    &.current {
+      color: $dark-text;
+    }
+  }
 }

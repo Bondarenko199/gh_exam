@@ -69,6 +69,28 @@ function gh_exam_customize_register( $wp_customize ) {
 	) ) );
 
 
+	$wp_customize->add_setting( 'section_1_header_headline_2', array(
+		'default'   => 'Headline',
+		'transport' => 'refresh'
+	) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'section_1_header_headline_2', array(
+		'label'    => __( 'Section headline', 'gh_exam' ),
+		'section'  => 'section_1',
+		'settings' => 'section_1_header_headline_2'
+	) ) );
+
+
+	$wp_customize->add_setting( 'section_1_header_headline_3', array(
+		'default'   => 'Headline',
+		'transport' => 'refresh'
+	) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'section_1_header_headline_3', array(
+		'label'    => __( 'Section headline', 'gh_exam' ),
+		'section'  => 'section_1',
+		'settings' => 'section_1_header_headline_3'
+	) ) );
+
+
 	$wp_customize->add_setting( 'section_1_header_text', array(
 		'default'   => 'Text',
 		'transport' => 'refresh'
@@ -318,6 +340,45 @@ function gh_exam_customize_register( $wp_customize ) {
 		'label'    => __( 'Address', 'gh_exam' ),
 		'section'  => 'footer',
 		'settings' => 'footer_address'
+	) ) );
+
+	/*-------------------------------blog Page-------------------------------*/
+
+	$wp_customize->add_section( 'blog_header', array(
+		'title'    => __( 'Blog header', 'gh_exam' ),
+		'panel'    => 'blog_page_options',
+		'priority' => 10
+	) );
+
+
+	$wp_customize->add_setting( 'blog_page_header', array(
+		'default'   => 'Headline',
+		'transport' => 'refresh'
+	) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'blog_page_header', array(
+		'label'    => __( 'Page headline', 'gh_exam' ),
+		'section'  => 'blog_header',
+		'settings' => 'blog_page_header'
+	) ) );
+
+
+	/*-------------------------------Single Post Page-------------------------------*/
+
+	$wp_customize->add_section( 'single_post_header', array(
+		'title'    => __( 'Blog header', 'gh_exam' ),
+		'panel'    => 'single_post_page_options',
+		'priority' => 10
+	) );
+
+
+	$wp_customize->add_setting( 'single_post_page_header', array(
+		'default'   => 'Headline',
+		'transport' => 'refresh'
+	) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'single_post_page_header', array(
+		'label'    => __( 'Page headline', 'gh_exam' ),
+		'section'  => 'single_post_header',
+		'settings' => 'single_post_page_header'
 	) ) );
 
 

@@ -11,13 +11,16 @@ get_header(); ?>
                 <img src="<?php echo get_theme_mod( 'section_1_image' ) ?>">
             </div>
             <div class="col-md-6">
-                <h2 class="section-header-headline margin light-text"><?php echo get_theme_mod( 'section_2_header_headline' ) ?></h2>
-                <p class="section-header-text margin light-text"><?php echo get_theme_mod( 'section_2_header_text' ) ?></p>
+                <h1 class="section-header-headline margin light-text intro-first-headline"><?php echo get_theme_mod( 'section_1_header_headline' ) ?></h1>
+                <h2 class="section-header-headline margin light-text intro-second-headline"><?php echo get_theme_mod( 'section_1_header_headline_2' ) ?></h2>
+                <h2 class="section-header-headline margin light-text intro-third-headline"><?php echo get_theme_mod( 'section_1_header_headline_3' ) ?></h2>
+                <p class="section-header-text margin light-text intro-text"><?php echo get_theme_mod( 'section_1_header_text' ) ?></p>
             </div>
+            <a href="#dest" class="d-block scroll fa fa-angle-down fa-3x" id="scroll"></a>
         </div>
     </div>
 </section>
-<section class="welcome">
+<section class="welcome" id="dest">
     <div class="container">
         <div class="row">
             <div class="col-md-6 welcome-section-img">

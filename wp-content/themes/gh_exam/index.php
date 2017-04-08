@@ -14,26 +14,20 @@
 
 get_header(); ?>
 
-    <section class="posts">
+    <section class="blog-header tone">
         <div class="container">
             <div class="section-header margin">
-                <h1 class="section-header-headline margin"><?php echo get_theme_mod( 'posts_section_header_headline' ) ?></h1>
+                <h1 class="section-header-headline margin light-text page-headline"><?php echo get_theme_mod( 'blog_page_header' ) ?></h1>
             </div>
+        </div>
+    </section>
+    <section class="posts">
+        <div class="container">
             <div class="row justify-content-center" role="main">
                 <ul class="col-md-8 row">
 
 					<?php
 					if ( have_posts() ) :
-
-//				if ( is_home() && ! is_front_page() ) :
-						?>
-                        <!--                    <header>-->
-                        <!--                        <h1 class="page-title screen-reader-text">--><?php //single_post_title();
-						?><!--</h1>-->
-                        <!--                    </header>-->
-                        <!---->
-                        <!--					--><?php
-//				endif;
 
 						/* Start the Loop */
 						while ( have_posts() ) : the_post();
@@ -56,10 +50,13 @@ get_header(); ?>
 					endif; ?>
                 </ul>
                 <div class="col-md-4 widgets-container">
-                    <?php get_sidebar() ?>
+					<?php get_sidebar() ?>
                 </div>
-                <div class="col-12">
-                    <?php the_posts_pagination() ?>
+                <div class="col-12 text-center">
+					<?php the_posts_pagination(array(
+						'prev_next'    => false,
+						'screen_reader_text' => ' ',
+                    )) ?>
                 </div>
             </div><!-- #main -->
         </div><!-- #primary -->

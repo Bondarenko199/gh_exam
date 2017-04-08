@@ -34,6 +34,10 @@ section {
   border: none !important;
 }
 
+.no-content {
+  font: 5em $font-bold;
+}
+
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------MAIN-ELEMENTS-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -44,7 +48,7 @@ section {
     margin-bottom: 1.75em;
   }
   &-headline {
-    font: 1.37em $font-section-headlines;
+    font: 1.37em $font-light;
     text-transform: uppercase;
     &.margin {
       margin-bottom: 1.2em;
@@ -74,6 +78,10 @@ section {
       color: $color-text;
     }
   }
+}
+
+.page-headline {
+  font: 2em $font-bold;
 }
 
 /*----------------------------------------------------------------------------------*/

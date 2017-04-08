@@ -1,9 +1,37 @@
 .intro {
+  position: relative;
   &-headline {
 
   }
   &-text {
 
+  }
+}
+
+.intro-first-headline {
+  font: 60px $font-bold !important;
+}
+
+.intro-first-headline {
+  font: 48px $font-main !important;
+}
+
+.intro-first-headline {
+  font-size: 30px !important;
+}
+
+.intro-text {
+  font: 24px $font-light !important;
+}
+
+.scroll {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateY(-50%);
+  color: $light-text;
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -16,7 +44,8 @@
     margin-bottom: 1em;
   }
   &-text {
-
+    font-size: 18px !important;
+    line-height: 1.5em;
   }
 }
 

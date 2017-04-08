@@ -14,26 +14,20 @@
 
 get_header(); ?>
 
-    <section class="posts">
+    <section class="blog-header tone">
         <div class="container">
             <div class="section-header margin">
-                <h1 class="section-header-headline margin"><?php echo get_theme_mod( 'posts_section_header_headline' ) ?></h1>
+                <h1 class="section-header-headline margin light-text page-headline"><?php single_post_title(); ?></h1>
             </div>
-            <div class="row" role="main">
-                <div class="col-md-8 row">
+        </div>
+    </section>
+    <section class="posts">
+        <div class="container">
+            <div class="row justify-content-center" role="main">
+                <div class="col-md-8">
 
 					<?php
 					if ( have_posts() ) :
-
-//				if ( is_home() && ! is_front_page() ) :
-						?>
-                        <!--                    <header>-->
-                        <!--                        <h1 class="page-title screen-reader-text">--><?php //single_post_title();
-						?><!--</h1>-->
-                        <!--                    </header>-->
-                        <!---->
-                        <!--					--><?php
-//				endif;
 
 						/* Start the Loop */
 						while ( have_posts() ) : the_post();

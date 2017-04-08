@@ -2,12 +2,16 @@
   border: 1px solid;
 }
 
-.single-post-img-container,
-.entry-title,
-.entry-content {
+.single-post-img-container {
   overflow: hidden;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
 }
 
 .single-post-title {
   color: #d35400;
+}
+
+.type-post {
+  margin-bottom: 2em;
 }
