@@ -1,0 +1,96 @@
+body {
+  font: $font-main;
+  //color: ;
+}
+
+section {
+  padding: 6.25em 0;
+}
+
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------MAIN-ELEMENTS-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.section-header {
+  text-align: center;
+  &.margin {
+    margin-bottom: 1.75em;
+  }
+  &-headline {
+    font: 1.37em $font-section-headlines;
+    text-transform: uppercase;
+    &.margin {
+      margin-bottom: 1.2em;
+    }
+  }
+  &-text {
+    &.margin {
+      margin-bottom: 1.75em;
+    }
+  }
+}
+
+.main {
+  &-text {
+    font-size: .87em;
+    &.margin {
+      margin-bottom: 2.2em;
+    }
+  }
+  &-button {
+    width: 2.9em;
+    height: 2.9em;
+    //padding: 1.5em 2.6rem;
+    //font-size: .81em;
+    //background: url("./images/main-button-bg.png") 50% 50% no-repeat;
+    &:hover {
+      color: $color-text;
+    }
+  }
+}
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------------COLORS----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.light {
+  &-text {
+    color: $light-text;
+  }
+  &-bg {
+    background: $light-bg;
+  }
+}
+
+.mid-tone {
+  &-text {
+    color: $mid-tone-text;
+  }
+  &-bg {
+    background: $mid-tone-bg;
+  }
+}
+
+.color {
+  &-text {
+    color: $color-text;
+  }
+  &-bg {
+    background: $color-bg;
+  }
+}
+
+.dark {
+  &-text {
+    color: $dark-text;
+  }
+  &-bg {
+    background: $dark-bg;
+  }
+}

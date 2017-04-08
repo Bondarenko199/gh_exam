@@ -1,0 +1,11 @@
+.menu-item {
+  a {
+    color: inherit;
+  }
+}
+
+.current-menu-item {
+	a {
+      color: $color-text;
+	}
+}

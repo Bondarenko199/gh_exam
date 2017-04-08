@@ -1,0 +1,47 @@
+/*!
+Theme Name: gh_exam
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gh_exam
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+gh_exam is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+@import "./variables/variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../node_modules/owl.carousel/src/scss/owl.carousel.scss";
+@import "../node_modules/owl.carousel/src/scss/owl.theme.default.scss";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+
+
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/core";
+
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/widgets";
+
+@import "./pages/front";
+@import "./pages/blog";
+@import "./pages/single_post";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "./base/media";
