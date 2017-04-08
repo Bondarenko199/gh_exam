@@ -30,6 +30,10 @@ section {
   }
 }
 
+.border-none {
+  border: none !important;
+}
+
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------MAIN-ELEMENTS-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -61,11 +65,11 @@ section {
     }
   }
   &-button {
-    width: 2.9em;
-    height: 2.9em;
-    //padding: 1.5em 2.6rem;
-    //font-size: .81em;
-    //background: url("./images/main-button-bg.png") 50% 50% no-repeat;
+    padding: .1em;
+    background: $light-bg;
+    position: absolute;
+    top: 1px;
+    right: .5em;
     &:hover {
       color: $color-text;
     }

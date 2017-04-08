@@ -1,0 +1,25 @@
+.posts-container {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.entry-title {
+  padding: 1em 1rem;
+  a {
+    color: $dark-text;
+  }
+}
+
+.entry-content {
+  padding: 0 1rem 1em;
+}
+
+.entry-footer {
+  padding: .5em 1rem;
+  border-top: 1px solid;
+  text-align: center;
+}
+
+.posted-on a time {
+  color: $dark-text;
+}

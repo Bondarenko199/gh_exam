@@ -1,3 +1,13 @@
 .type-post {
   border: 1px solid;
 }
+
+.single-post-img-container,
+.entry-title,
+.entry-content {
+  overflow: hidden;
+}
+
+.single-post-title {
+  color: #d35400;
+}

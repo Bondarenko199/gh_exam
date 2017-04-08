@@ -6,3 +6,34 @@
 
   }
 }
+
+.welcome {
+  padding-bottom: 0;
+  &-container {
+    padding-top: 10em;
+  }
+  &-headline {
+    margin-bottom: 1em;
+  }
+  &-text {
+
+  }
+}
+
+.offer-text {
+  p {
+    color: $light-text;
+  }
+}
+
+.offer {
+  &-header.margin {
+    margin-bottom: 8em;
+  }
+  &-img-container {
+    margin-bottom: 1em;
+  }
+  &-headline {
+    margin-bottom: .8em;
+  }
+}

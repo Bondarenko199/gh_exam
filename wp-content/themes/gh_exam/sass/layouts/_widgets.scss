@@ -1,0 +1,65 @@
+.widget {
+  padding: 2em 2rem;
+  margin-bottom: 2em;
+  background: $mid-dark-text;
+  color: $light-text;
+  text-align: center;
+  &-title {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+}
+
+.search-form {
+  label {
+    width: 100%;
+  }
+  .screen-reader-text {
+    display: none;
+  }
+  .search-field {
+    width: 100%;
+    padding: .6em 1rem;
+    display: block;
+    margin-bottom: 2em;
+    border: 1px solid $light-bg;
+    background: $mid-dark-text;
+    color: $light-text;
+  }
+  .search-submit {
+    width: 100%;
+    display: inline-block;
+    border: none;
+    padding: 1em 2rem;
+    background: $color_bg;
+    color: $light-text;
+  }
+}
+
+.nsu-text-before-form {
+  margin-bottom: 2.5em;
+  text-align: left;
+}
+
+.nsu-form p {
+  label {
+    display: none;
+  }
+  .nsu-field {
+    width: 100%;
+    padding: .6em 1rem;
+    display: block;
+    margin-bottom: 2em;
+    border: 1px solid $light-bg;
+    background: $mid-dark-text;
+    color: $light-text;
+  }
+  .nsu-submit {
+    width: 100%;
+    display: inline-block;
+    border: none;
+    padding: 1em 2rem;
+    background: $color_bg;
+    color: $light-text;
+  }
+}

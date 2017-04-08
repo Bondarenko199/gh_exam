@@ -19,7 +19,7 @@ get_header(); ?>
             <div class="section-header margin">
                 <h1 class="section-header-headline margin"><?php echo get_theme_mod( 'posts_section_header_headline' ) ?></h1>
             </div>
-            <div class="row" role="main">
+            <div class="row justify-content-center" role="main">
                 <ul class="col-md-8 row">
 
 					<?php
@@ -55,7 +55,7 @@ get_header(); ?>
 
 					endif; ?>
                 </ul>
-                <div class="col-md-4">
+                <div class="col-md-4 widgets-container">
                     <?php get_sidebar() ?>
                 </div>
                 <div class="col-12">
